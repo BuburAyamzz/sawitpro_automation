@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-01-13T16:56:22.445586" rpa="false" schemaversion="5">
+<suite id="s1" name="Sawitpro Automation" source="C:\Users\Aven\Documents\Sawitpro Automation">
+<suite id="s1-s1" name="Tests" source="C:\Users\Aven\Documents\Sawitpro Automation\tests">
+<suite id="s1-s1-s1" name="Login Logout" source="C:\Users\Aven\Documents\Sawitpro Automation\tests\login_logout.robot">
+<test id="s1-s1-s1-t1" name="Logout Successfully" line="40">
+<kw name="Open PetaniPRO App" owner="appium_keywords" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>appium:automationName=UiAutomator2</arg>
+<arg>appium:deviceName=${DEVICE_NAME}</arg>
+<arg>appium:appPackage=${APP_PACKAGE}</arg>
+<arg>appium:appActivity=${APP_ACTIVITY}</arg>
+<arg>appium:noReset=false</arg>
+<arg>appium:autoGrantPermissions=true</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="PASS" start="2026-01-13T16:56:22.625770" elapsed="5.013564"/>
+</kw>
+<status status="PASS" start="2026-01-13T16:56:22.625341" elapsed="5.014180"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:29.419578" level="INFO">xpath criteria: //*[contains(@resource-id,"btn_profil")]</msg>
+<arg>xpath=//*[contains(@resource-id,"btn_profil")]</arg>
+<arg>20s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-13T16:56:27.639791" elapsed="1.780009"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:29.421343" level="INFO">Clicking element 'xpath=//*[contains(@resource-id,"btn_profil")]'.</msg>
+<msg time="2026-01-13T16:56:29.659999" level="INFO">xpath criteria: //*[contains(@resource-id,"btn_profil")]</msg>
+<arg>xpath=//*[contains(@resource-id,"btn_profil")]</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T16:56:29.420174" elapsed="0.240035"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:30.327446" level="INFO">xpath criteria: //android.widget.Button</msg>
+<arg>xpath=//android.widget.Button</arg>
+<arg>20s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-13T16:56:29.660536" elapsed="0.667092"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:30.328739" level="INFO">Clicking element 'xpath=//android.widget.Button'.</msg>
+<msg time="2026-01-13T16:56:31.160295" level="INFO">xpath criteria: //android.widget.Button</msg>
+<arg>xpath=//android.widget.Button</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T16:56:30.327964" elapsed="0.832543"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:32.293988" level="INFO">xpath criteria: //*[contains(@resource-id,"input_phone")]</msg>
+<arg>xpath=//*[contains(@resource-id,"input_phone")]</arg>
+<arg>20s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-13T16:56:31.160827" elapsed="1.133354"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:32.295205" level="INFO">Typing text '085972957515' into text field 'xpath=//*[contains(@resource-id,"input_phone")]'</msg>
+<msg time="2026-01-13T16:56:32.341797" level="INFO">xpath criteria: //*[contains(@resource-id,"input_phone")]</msg>
+<arg>xpath=//*[contains(@resource-id,"input_phone")]</arg>
+<arg>085972957515</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T16:56:32.294479" elapsed="0.047508"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:32.343032" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="Ayo Mulai!"]'.</msg>
+<msg time="2026-01-13T16:56:33.021600" level="INFO">xpath criteria: //android.widget.TextView[@text="Ayo Mulai!"]</msg>
+<arg>xpath=//android.widget.TextView[@text="Ayo Mulai!"]</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T16:56:32.342288" elapsed="0.679519"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:34.573841" level="INFO">xpath criteria: //*[contains(@resource-id,"input_login_pin")]
+xpath criteria: //*[contains(@resource-id,"input_login_pin")]
+xpath criteria: //*[contains(@resource-id,"input_login_pin")]</msg>
+<arg>xpath=//*[contains(@resource-id,"input_login_pin")]</arg>
+<arg>20s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-13T16:56:33.022145" elapsed="1.551908"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:34.575223" level="INFO">Typing text '200202' into text field 'xpath=//*[contains(@resource-id,"input_login_pin")]'</msg>
+<msg time="2026-01-13T16:56:34.624217" level="INFO">xpath criteria: //*[contains(@resource-id,"input_login_pin")]</msg>
+<arg>xpath=//*[contains(@resource-id,"input_login_pin")]</arg>
+<arg>200202</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T16:56:34.574506" elapsed="0.049934"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:37.370354" level="INFO">xpath criteria: //android.widget.TextView[@text="Tutup"]
+xpath criteria: //android.widget.TextView[@text="Tutup"]
+xpath criteria: //android.widget.TextView[@text="Tutup"]
+xpath criteria: //android.widget.TextView[@text="Tutup"]
+xpath criteria: //android.widget.TextView[@text="Tutup"]
+xpath criteria: //android.widget.TextView[@text="Tutup"]
+xpath criteria: //android.widget.TextView[@text="Tutup"]</msg>
+<arg>xpath=//android.widget.TextView[@text="Tutup"]</arg>
+<arg>20s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-13T16:56:34.624833" elapsed="2.745716"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:37.371778" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="Tutup"]'.</msg>
+<msg time="2026-01-13T16:56:38.046507" level="INFO">xpath criteria: //android.widget.TextView[@text="Tutup"]</msg>
+<arg>xpath=//android.widget.TextView[@text="Tutup"]</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T16:56:37.370891" elapsed="0.675825"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:38.132573" level="INFO">xpath criteria: //android.view.View[@resource-id="btn_profil"]</msg>
+<arg>xpath=//android.view.View[@resource-id="btn_profil"]</arg>
+<arg>20s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-13T16:56:38.046998" elapsed="0.085807"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:38.133918" level="INFO">Clicking element 'xpath=//android.view.View[@resource-id="btn_profil"]'.</msg>
+<msg time="2026-01-13T16:56:38.273502" level="INFO">xpath criteria: //android.view.View[@resource-id="btn_profil"]</msg>
+<arg>xpath=//android.view.View[@resource-id="btn_profil"]</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T16:56:38.133130" elapsed="0.140674"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:38.394584" level="INFO">xpath criteria: //android.widget.TextView[@text="Keluar"]</msg>
+<arg>xpath=//android.widget.TextView[@text="Keluar"]</arg>
+<arg>20s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-13T16:56:38.274056" elapsed="0.120747"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-01-13T16:56:38.395912" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="Keluar"]'.</msg>
+<msg time="2026-01-13T16:56:38.504176" level="INFO">xpath criteria: //android.widget.TextView[@text="Keluar"]</msg>
+<arg>xpath=//android.widget.TextView[@text="Keluar"]</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-13T16:56:38.395144" elapsed="0.109283"/>
+</kw>
+<kw name="Close PetaniPRO App" owner="appium_keywords" type="TEARDOWN">
+<kw name="Terminate Application" owner="AppiumLibrary">
+<arg>${APP_PACKAGE}</arg>
+<doc>Terminates the given app on the device.</doc>
+<status status="PASS" start="2026-01-13T16:56:38.505489" elapsed="0.316703"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="PASS" start="2026-01-13T16:56:38.822358" elapsed="0.300366"/>
+</kw>
+<status status="PASS" start="2026-01-13T16:56:38.505052" elapsed="0.617815"/>
+</kw>
+<status status="PASS" start="2026-01-13T16:56:22.623393" elapsed="16.499694"/>
+</test>
+<status status="PASS" start="2026-01-13T16:56:22.486301" elapsed="16.640156"/>
+</suite>
+<status status="PASS" start="2026-01-13T16:56:22.482036" elapsed="16.646496"/>
+</suite>
+<status status="PASS" start="2026-01-13T16:56:22.448627" elapsed="16.681578"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Sawitpro Automation" id="s1" pass="1" fail="0" skip="0">Sawitpro Automation</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Sawitpro Automation.Tests</stat>
+<stat name="Login Logout" id="s1-s1-s1" pass="1" fail="0" skip="0">Sawitpro Automation.Tests.Login Logout</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
